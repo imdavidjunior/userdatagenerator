@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>User Data Generator Tool</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Introducing a User Data Generator Tool!</h1>
+      <p>
+        Customize your data by selecting fields of interest such as name, email,
+        phone, and more. Generate up to 50 unique user profiles with a single
+        click. Perfect for testing and development purposes."
+      </p>
+      <div class="checkboxes">
+        <div class="">
+          <label class="label" for="nameCheckbox">Name</label>
+          <input type="checkbox" id="nameCheckbox" />
+        </div>
+
+        <div class="">
+          <label class="label" for="emailCheckbox">Email address</label>
+          <input type="checkbox" id="emailCheckbox" />
+        </div>
+        <div class="">
+          <label class="label" for="phoneCheckbox">Phone number</label>
+          <input type="checkbox" id="phoneCheckbox" />
+        </div>
+
+        <div class="">
+          <label class="label" for="countryCheckbox">Country</label>
+          <input type="checkbox" id="countryCheckbox" />
+        </div>
+
+        <div class="">
+          <label class="label" for="cityCheckbox">City</label>
+          <input type="checkbox" id="cityCheckbox" />
+        </div>
+
+        <div class="">
+          <label class="label" for="websiteCheckbox">Website </label>
+          <input type="checkbox" id="websiteCheckbox" />
+        </div>
+      </div>
+      <div class="user-count">
+        <input type="text" id="userCount" placeholder="Type number of users" />
+        <button id="generateButton">Generate</button>
+      </div>
+
+      <p id="errors"></p>
+
+      <ul id="userList"></ul>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

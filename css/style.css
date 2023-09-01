@@ -1,0 +1,149 @@
+:root {
+  --white-color: rgb(255, 255, 255);
+  --black-color: rgb(37, 37, 37);
+  --gray-color: #6e6e6e;
+  --blue-color: rgba(10, 110, 189, 1);
+  --dark-blue-color: #0967ae;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: var(--black-color);
+  color: var(--dark-color);
+  scroll-behavior: smooth;
+  transition: 0.3s all ease-in;
+}
+
+.container {
+  width: 75%;
+  background-color: rgba(217, 217, 217, 0.1568627451);
+  margin: 0 auto;
+  min-height: 80vh;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--blue-color);
+}
+
+p {
+  width: 50%;
+  color: var(--white-color);
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1em 0em;
+}
+
+.checkboxes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1em;
+}
+.checkboxes div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.checkboxes div input {
+  display: none;
+}
+.checkboxes div .label {
+  font-size: 0.75rem;
+  cursor: pointer;
+  background-color: rgba(185, 185, 185, 0.2431372549);
+  color: var(--white-color);
+  padding: 0.5em 1em;
+  border-radius: 48px;
+}
+.checkboxes div .label-clicked {
+  font-weight: 700;
+  background-color: var(--blue-color);
+  border: 2px solid var(--blue-color);
+}
+
+.user-count {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.5rem;
+}
+.user-count input {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  color: var(--white-color);
+  font-weight: 400;
+  border: 1px solid var(--white-color);
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+#generateButton {
+  width: 200px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  font-weight: 700;
+  padding: 0.75em 1em;
+  font-size: 0.85rem;
+}
+
+::-moz-placeholder {
+  color: var(--white-color);
+}
+
+::placeholder {
+  color: var(--white-color);
+}
+
+#userList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#userList li {
+  max-width: 100%;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  list-style: none;
+  line-height: 2;
+  padding: 1em;
+  color: var(--white-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgba(185, 185, 185, 0.2431372549);
+}
+#userList li span {
+  font-weight: 700;
+}
+
+#errors {
+  color: red;
+  font-weight: 700;
+  font-size: 0.85rem;
+}/*# sourceMappingURL=style.css.map */
